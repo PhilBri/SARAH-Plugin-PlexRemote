@@ -4,9 +4,8 @@
     "plexremote"  : {
       "description": "SARAH controle Plex",
       "version"    : "0.9",
-      "server"     : "192.168.0.20",
-    	"client"     : "plexhometheater on rasplex",
-      "Sectionserie" : "",
+      "server"     : "",
+    	"client"     : "",
       "lastAddTime" :"1"
     }
   }
