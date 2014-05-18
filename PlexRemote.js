@@ -44,6 +44,8 @@ exports.action = function ( data , callback , config , SARAH ) {
 			case 'clients' :
 				getClients (data.cmd, res, callback);
 				break;
+			default :
+				plexLog(callback, 'OK', data.cmd);
 		}
 	});
 }
@@ -68,7 +70,6 @@ var getPlex = function (cmd, config, callback, clbk) {
 		}
 		clbk (body);
 	});
-	//plexLog(callback, 'OK', cmd);
 }
 
 var getClients = function (cmd, res, callback) {
