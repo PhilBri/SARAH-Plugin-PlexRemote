@@ -90,8 +90,6 @@ var getClients = function (cmd, res, callback) {
 
     		txt += ' : client '+ (i+1) + ' = ' + plexClient[i].attr.name + ' : ';
     	}
-
     	plexLog (callback, txt, cmd);
     }
-
 }
