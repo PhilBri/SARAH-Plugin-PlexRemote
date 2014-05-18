@@ -1,0 +1,45 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleplexremote" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleplexremote" scope="public">
+    <example>Sarah allume la Box</example>
+    <tag>out.action=new Object(); </tag>
+    
+    <item>Sarah</item>
+    <one-of>
+
+        <!-- sys (à venir !!!) -->
+        <item>Quels sont les clients plex   <tag>out.action.cmd="clients";          out.action.cat="sys";  </tag></item>
+
+        <!-- navigation -->
+        <item>Plex retour                   <tag>out.action.cmd="back";             out.action.cat="nav";   </tag></item>
+        <item>Plex menu                     <tag>out.action.cmd="contextMenu";      out.action.cat="nav";   </tag></item>
+        <item>Plex réveille                 <tag>out.action.cmd="select";           out.action.cat="nav";   </tag></item>
+        <item>Plex entrée                   <tag>out.action.cmd="select";           out.action.cat="nav";   </tag></item>
+        <item>Plex lettre précédente        <tag>out.action.cmd="previousLetter";   out.action.cat="nav";   </tag></item>
+        <item>Plex lettre suivante          <tag>out.action.cmd="nextLetter";       out.action.cat="nav";   </tag></item>
+        <item>Plex O S D                    <tag>out.action.cmd="toggleOSD";        out.action.cat="nav";   </tag></item>
+        <item>Plex haut                     <tag>out.action.cmd="moveUp";           out.action.cat="nav";   </tag></item>
+        <item>Plex bas                      <tag>out.action.cmd="moveDown";         out.action.cat="nav";   </tag></item>
+        <item>Plex droite                   <tag>out.action.cmd="moveRight";        out.action.cat="nav";   </tag></item>
+        <item>Plex gauche                   <tag>out.action.cmd="moveLeft";         out.action.cat="nav";   </tag></item>
+        <item>Plex haut                     <tag>out.action.cmd="moveUp";           out.action.cat="nav";   </tag></item>
+        <item>Plex page haut                <tag>out.action.cmd="pageUp";           out.action.cat="nav";   </tag></item>
+        <item>Plex page bas                 <tag>out.action.cmd="pageDown";         out.action.cat="nav";   </tag></item>
+
+        <!-- playback -->
+        <item>Plex lecture                  <tag>out.action.cmd="play";             out.action.cat="play";  </tag></item>
+        <item>Plex pause                    <tag>out.action.cmd="pause";            out.action.cat="play";  </tag></item>
+        <item>Plex stop                     <tag>out.action.cmd="stop";             out.action.cat="play";  </tag></item>
+        <item>Plex début                    <tag>out.action.cmd="rewind";           out.action.cat="play";  </tag></item>
+        <item>Plex suivant                  <tag>out.action.cmd="skipNext";         out.action.cat="play";  </tag></item>
+        <item>Plex précédent                <tag>out.action.cmd="skipPrevious";     out.action.cat="play";  </tag></item>
+        <item>Plex stop                     <tag>out.action.cmd="stop";             out.action.cat="play";  </tag></item>
+        <item>Plex avance                   <tag>out.action.cmd="stepForward";      out.action.cat="play";  </tag></item>
+        <item>Plex avance plus              <tag>out.action.cmd="bigStepForward";   out.action.cat="play";  </tag></item>
+        <item>Plex recule                   <tag>out.action.cmd="stepBack";         out.action.cat="play";  </tag></item>
+        <item>Plex recule plus              <tag>out.action.cmd="bigStepBack";      out.action.cat="play";  </tag></item>
+
+   </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/plexremote";</tag>
+  </rule>
+</grammar>
