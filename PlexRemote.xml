@@ -6,7 +6,7 @@
     <item>Sarah</item>
     <one-of>
 
-        <!-- sys (à venir !!!) -->
+        <!-- sys -->
         <item>Quels sont les clients plex   <tag>out.action.cmd="clients";          out.action.cat="sys";  </tag></item>
 
         <!-- navigation -->

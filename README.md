@@ -34,7 +34,7 @@ on top of:
 
 ## Description
 
-This plugin remote Plex client with SARAH.
+PLEX-Client remote plugin for project S.A.R.A.H
 
 
 ## Quick Start

@@ -1,0 +1,6 @@
+=== Version 0.9 (18/05/2014) ===
+Publication projet initial.
+
+=== version 1.0 (18/05/2014) ===
+Ajout de la recherche des clients Plex disponibles
+Vocalisation de la recherche des clients
