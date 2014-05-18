@@ -2,11 +2,11 @@
 {
   "modules" : { 
     "plexremote"  : {
-      "description": "SARAH controle Plex",
-      "version"    : "0.9",
-      "server"     : "",
-    	"client"     : "",
-      "lastAddTime" :"1"
+		"description": "SARAH controle Plex",
+		"version"    : "0.9",
+		"server"     : "",
+		"client"     : "",
+		"lastAddTime" :"1"
     }
   }
 }
