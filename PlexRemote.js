@@ -76,21 +76,21 @@ var getClients = function (cmd, res, callback) {
 	var xmldoc = require ('./lib/xmldoc');
 	var plexXML = new xmldoc.XmlDocument (res);
 	var plexClient = plexXML.childrenNamed ('Server');
-    var txt = 'J\'ai trouvé ';
+	var txt = 'J\'ai trouvé ';
 
-    if (plexClient[0] === undefined) {
+	if (plexClient[0] === undefined) {
 
-    	txt += 'aucun client';
-    	plexLog (cmd, txt);
-    } else {
+		txt += 'aucun client';
+		plexLog (cmd, txt);
+	} else {
 
-    	var nbClients = plexClient.length;
-    	txt += nbClients + ' client';
-    	for (var i = 0; i < nbClients; i++) {
+		var nbClients = plexClient.length;
+		txt += nbClients + ' client';
+		for (var i = 0; i < nbClients; i++) {
 
-    		txt += ' : client '+ (i+1) + ' = ' + plexClient[i].attr.name + ' : ';
-    	}
-    	plexLog (callback, txt, cmd);
-    }
+			txt += ' : client '+ (i+1) + ' = ' + plexClient[i].attr.name + ' : ';
+		}
+		plexLog (callback, txt, cmd);
+	}
 }
 
