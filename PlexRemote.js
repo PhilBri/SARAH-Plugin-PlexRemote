@@ -8,7 +8,6 @@
 
 exports.action = function ( data , callback , config , SARAH ) {
 
-	var xlmDoc = require('./lib/xmldoc');
 	var config = config.modules.plexremote;
 	var commande  = '/';
 
