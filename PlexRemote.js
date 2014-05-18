@@ -92,8 +92,5 @@ var getClients = function (cmd, res, callback) {
     	}
     	plexLog (callback, txt, cmd);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e1f3bacbbf5aaa2d7a04d75e7c062864b8ee92a9
+
