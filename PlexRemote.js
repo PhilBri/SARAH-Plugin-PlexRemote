@@ -5,8 +5,10 @@
 |___________________________________________________|
 */
 
-exports.action = function ( data , callback , config , SARAH ) {
 
+
+//exports.action = function ( data , callback , config , SARAH ) {
+exports.init = function ( SARAH ) {
 	var config = config.modules.plexremote;
 	var commande  = '/';
 
@@ -36,6 +38,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 			break;
 		default :
 			plexLog (callback, 'Commande PLEX incorrecte', commande);
+			return;
 	}
 
 	getPlex (commande, config, callback, function (res) {
